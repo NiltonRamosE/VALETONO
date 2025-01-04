@@ -14,9 +14,9 @@ export const Navbar = () => {
     const targetElement = document.getElementById(id);
 
     if (targetElement) {
-      const navbarHeight = 80; // Ajusta según el alto de tu Navbar
+      const navbarHeight = 80;
       const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-      const offsetPosition = elementPosition - navbarHeight - 20; // Offset adicional
+      const offsetPosition = elementPosition - navbarHeight - 20;
 
       window.scrollTo({
         top: offsetPosition,

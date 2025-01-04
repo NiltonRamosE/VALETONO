@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function UbicacionSection() {
-
   return (
     <div className="relative z-10 flex flex-col items-center px-8 py-12 lg:px-20 lg:py-16 gap-12 overflow-hidden">
       <motion.div
@@ -35,7 +34,7 @@ export default function UbicacionSection() {
               <p className="text-gray-300 text-sm leading-relaxed">
                 Salón de Eventos Grand Aurora
                 <br />
-                Av. Central #123, Ciudad Estrella
+                Av. Miguel Grau Mz Ñ Lt. 10
               </p>
             </div>
           </div>
@@ -46,7 +45,6 @@ export default function UbicacionSection() {
           </div>
         </div>
 
-        {/* Google Maps */}
         <div className="w-full md:w-1/2 h-64 md:h-80 rounded-lg overflow-hidden shadow-md">
           <iframe
             title="Ubicación VALETONO"

@@ -25,7 +25,6 @@ export default function EventSection() {
         transition={{ duration: 0.8 }}
         className="text-left lg:w-2/3 lg:pr-8"
       >
-        {/* Encabezado */}
         <motion.h1
           className="font-bold text-3xl md:text-5xl lg:text-5xl leading-tight text-white mb-4"
           initial={{ scale: 0.9, y: 20 }}
@@ -46,9 +45,7 @@ export default function EventSection() {
           evento: <span className="font-bold text-nilton-neon">VALETONO</span>
         </motion.p>
 
-        {/* Detalles del Evento */}
         <div className="space-y-6 mt-8">
-          {/* Fecha */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -62,7 +59,6 @@ export default function EventSection() {
             </div>
           </motion.div>
 
-          {/* Lugar */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -72,13 +68,10 @@ export default function EventSection() {
             <FaMapMarkerAlt className="text-nilton-blue text-2xl" />
             <div>
               <h3 className="font-bold text-lg text-white">Ubicación</h3>
-              <p className="text-gray-300">
-                Salón de Eventos Grand Aurora, Av. Central #123, Ciudad Estrella
-              </p>
+              <p className="text-gray-300">Av. Miguel Grau Mz Ñ Lt. 10</p>
             </div>
           </motion.div>
 
-          {/* Entradas */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -97,13 +90,11 @@ export default function EventSection() {
           </motion.div>
         </div>
 
-        {/* Sección de Actividades */}
         <div className="mt-12 space-y-6">
           <h2 className="font-bold text-2xl text-white mb-4">
             Actividades Destacadas
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Música en Vivo */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -114,7 +105,6 @@ export default function EventSection() {
               <p className="text-gray-300">DJ y Shows en Vivo</p>
             </motion.div>
 
-            {/* Bebidas Exclusivas */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -149,21 +139,19 @@ export default function EventSection() {
       </motion.div>
 
       <motion.div
-  initial={{ opacity: 0, x: 50 }}
-  animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : 50 }}
-  transition={{ duration: 0.8 }}
-  className="relative flex justify-center lg:justify-end mb-8"
->
-  <div className="relative w-3/4 lg:w-full max-w-md flex items-center justify-center">
-    {/* Imagen circular con sombra inferior */}
-    <img
-      src="vale-photo-1.png"
-      alt="Evento VALETONO"
-      className="relative w-full max-w-sm rounded-full shadow-[0_10px_20px_-5px_rgba(0,0,0,0.6)] object-cover"
-    />
-  </div>
-</motion.div>
-
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : 50 }}
+        transition={{ duration: 0.8 }}
+        className="relative flex justify-center lg:justify-end mb-8"
+      >
+        <div className="relative w-3/4 lg:w-full max-w-md flex items-center justify-center">
+          <img
+            src="vale-photo-1.png"
+            alt="Evento VALETONO"
+            className="relative w-full max-w-sm rounded-full shadow-[0_10px_20px_-5px_rgba(0,0,0,0.6)] object-cover"
+          />
+        </div>
+      </motion.div>
     </div>
   );
 }

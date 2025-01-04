@@ -11,11 +11,11 @@ export default function InvitadosSection() {
   }, []);
 
   const invitados = [
-    { imagen: "invitado-1.png", titulo: "Invitado 1" },
-    { imagen: "invitado-2.png", titulo: "Invitado 2" },
-    { imagen: "invitado-3.png", titulo: "Invitado 3" },
-    { imagen: "invitado-4.png", titulo: "Invitado 4" },
-    { imagen: "invitado-5.png", titulo: "Invitado 5" },
+    { imagen: "daza.jpeg", titulo: "Daza 2025" },
+    { imagen: "invitado-2.png", titulo: "Peso pluma (Lujan)" },
+    { imagen: "osito-peru.webp", titulo: "Osito Perú (Osorio)" },
+    { imagen: "invitado-4.png", titulo: "Dj. Torres" },
+    { imagen: "invitado-5.png", titulo: "Carlitos" },
     { imagen: "invitado-6.png", titulo: "Invitado 6" },
   ];
 
