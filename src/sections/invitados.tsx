@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
+import InvitadoEspecial from "@/components/invitado";
 
 export default function InvitadosSection() {
   const [mounted, setMounted] = useState(false);
@@ -8,6 +9,15 @@ export default function InvitadosSection() {
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const invitados = [
+    { imagen: "invitado-1.png", titulo: "Invitado 1" },
+    { imagen: "invitado-2.png", titulo: "Invitado 2" },
+    { imagen: "invitado-3.png", titulo: "Invitado 3" },
+    { imagen: "invitado-4.png", titulo: "Invitado 4" },
+    { imagen: "invitado-5.png", titulo: "Invitado 5" },
+    { imagen: "invitado-6.png", titulo: "Invitado 6" },
+  ];
 
   return (
     <div className="relative z-10 flex flex-col items-center px-8 py-12 lg:px-20 lg:py-16 gap-12 overflow-hidden">
@@ -24,9 +34,7 @@ export default function InvitadosSection() {
         </h1>
       </motion.div>
 
-      {/* Contenido Principal */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-12 w-full">
-        {/* Columna Izquierda: Imagen Principal */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : -50 }}
@@ -49,65 +57,13 @@ export default function InvitadosSection() {
           transition={{ duration: 0.8 }}
           className="w-full lg:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-6 justify-items-center"
         >
-          {/* Invitado 1 */}
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="invitado-1.png"
-              alt="Invitado 1"
-              className="w-28 h-28 rounded-full object-cover shadow-md"
+          {invitados.map((invitado, index) => (
+            <InvitadoEspecial
+              key={index}
+              imagen={invitado.imagen}
+              titulo={invitado.titulo}
             />
-            <h3 className="mt-2 font-semibold text-white text-sm">Invitado 1</h3>
-          </div>
-
-          {/* Invitado 2 */}
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="invitado-2.png"
-              alt="Invitado 2"
-              className="w-28 h-28 rounded-full object-cover shadow-md"
-            />
-            <h3 className="mt-2 font-semibold text-white text-sm">Invitado 2</h3>
-          </div>
-
-          {/* Invitado 3 */}
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="invitado-3.png"
-              alt="Invitado 3"
-              className="w-28 h-28 rounded-full object-cover shadow-md"
-            />
-            <h3 className="mt-2 font-semibold text-white text-sm">Invitado 3</h3>
-          </div>
-
-          {/* Invitado 4 */}
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="invitado-4.png"
-              alt="Invitado 4"
-              className="w-28 h-28 rounded-full object-cover shadow-md"
-            />
-            <h3 className="mt-2 font-semibold text-white text-sm">Invitado 4</h3>
-          </div>
-
-          {/* Invitado 5 */}
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="invitado-5.png"
-              alt="Invitado 5"
-              className="w-28 h-28 rounded-full object-cover shadow-md"
-            />
-            <h3 className="mt-2 font-semibold text-white text-sm">Invitado 5</h3>
-          </div>
-
-          {/* Invitado 6 */}
-          <div className="flex flex-col items-center text-center">
-            <img
-              src="invitado-6.png"
-              alt="Invitado 6"
-              className="w-28 h-28 rounded-full object-cover shadow-md"
-            />
-            <h3 className="mt-2 font-semibold text-white text-sm">Invitado 6</h3>
-          </div>
+          ))}
         </motion.div>
       </div>
     </div>
