@@ -21,7 +21,6 @@ export default function InvitadosSection() {
 
   return (
     <div className="relative z-10 flex flex-col items-center px-8 py-12 lg:px-20 lg:py-16 gap-12 overflow-hidden">
-      {/* Título Principal */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -50,7 +49,6 @@ export default function InvitadosSection() {
           </div>
         </motion.div>
 
-        {/* Columna Derecha: Imágenes más pequeñas */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : 50 }}
