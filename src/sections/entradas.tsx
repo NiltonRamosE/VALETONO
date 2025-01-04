@@ -1,11 +1,27 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+
+import { motion, AnimatePresence } from "framer-motion";
 import {
   FaTicketAlt,
   FaCreditCard,
   FaCheckCircle,
+  FaTimes,
 } from "react-icons/fa";
 
 export default function EntradasSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState("");
+
+  const openModal = (image: string) => {
+    setModalImage(image);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalImage("");
+  };
+
   return (
     <div className="relative z-10 flex flex-col items-center justify-center px-8 py-12 lg:px-20 lg:py-16 space-y-8 overflow-hidden">
       <motion.div
@@ -48,8 +64,11 @@ export default function EntradasSection() {
           <p className="text-gray-300 text-sm mt-2">
             Acceso completo al evento.
           </p>
-          <span className="font-bold text-white text-2xl mt-4">$50 USD</span>
-          <button className="mt-4 px-6 py-2 bg-nilton-neon text-white font-semibold rounded-lg shadow-md hover:bg-nilton-light transition">
+          <span className="font-bold text-white text-2xl mt-4">S/. 10</span>
+          <button
+            onClick={() => openModal("yape-nilton.jpeg")}
+            className="mt-4 px-6 py-2 bg-nilton-neon text-white font-semibold rounded-lg shadow-md hover:bg-nilton-dark transition"
+          >
             Comprar Ahora
           </button>
         </motion.div>
@@ -63,13 +82,45 @@ export default function EntradasSection() {
           <FaCreditCard className="text-nilton-dark text-4xl mb-4" />
           <h3 className="font-bold text-white text-lg">Entrada VIP</h3>
           <p className="text-gray-300 text-sm mt-2">
-            Acceso prioritario y áreas exclusivas.
+            Acceso prioritario y áreas exclusivas. ¡Compra ya!
           </p>
-          <span className="font-bold text-white text-2xl mt-4">$120 USD</span>
-          <button className="mt-4 px-6 py-2 bg-nilton-blue text-white font-semibold rounded-lg shadow-md hover:bg-nilton-light transition">
+          <span className="font-bold text-white text-2xl mt-4">S/. 25</span>
+          <button
+            onClick={() => openModal("yape-nilton.jpeg")}
+            className="mt-4 px-6 py-2 bg-nilton-blue text-white font-semibold rounded-lg shadow-md hover:bg-nilton-dark transition"
+          >
             Comprar VIP
           </button>
         </motion.div>
+
+        <AnimatePresence>
+          {isModalOpen && (
+            <motion.div
+              className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <div className="relative bg-nilton-dark rounded-lg p-4 shadow-lg w-11/12 sm:w-3/4 md:w-1/2 lg:w-1/3 xl:w-1/4 max-h-[80vh] overflow-hidden">
+                <button
+                  onClick={closeModal}
+                  className="absolute top-2 right-2 text-white text-2xl hover:text-gray-300 transition"
+                >
+                  <FaTimes />
+                </button>
+
+                {/* Imagen */}
+                <div className="flex items-center justify-center max-h-[60vh] overflow-hidden">
+                  <img
+                    src={modalImage}
+                    alt="Modal de Entrada"
+                    className="w-full h-auto rounded-lg object-contain"
+                  />
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
 
       <motion.div

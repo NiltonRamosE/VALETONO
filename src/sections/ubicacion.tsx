@@ -1,13 +1,7 @@
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function UbicacionSection() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   return (
     <div className="relative z-10 flex flex-col items-center px-8 py-12 lg:px-20 lg:py-16 gap-12 overflow-hidden">
