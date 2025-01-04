@@ -4,6 +4,7 @@ import DefaultLayout from "@/layouts/default";
 import { motion } from "framer-motion";
 
 import EventSection from "@/sections/evento";
+import EntradasSection from "@/sections/entradas";
 
 export default function IndexPage() {
 
@@ -20,16 +21,7 @@ export default function IndexPage() {
         transition={{ duration: 0.5 }}
         className=""
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam expedita quas ullam numquam facere nostrum. Nihil nam repudiandae excepturi ex quae, nobis sint explicabo suscipit sunt est sed ducimus labore!
-        Eligendi eaque, totam sed nisi consequuntur cumque sit atque quo rem quod, delectus vitae minima optio vero? Beatae dolorem dolores id officia voluptatem? Perferendis voluptas quia accusantium, cum odit aspernatur!
-        Voluptatibus corporis tempora odio possimus assumenda hic esse illo natus! Voluptates, soluta facilis sunt quidem odio tempore repudiandae amet eaque, provident illo nulla dolor non nesciunt minima quod, corrupti adipisci.
-        Maxime dignissimos praesentium repudiandae hic animi obcaecati exercitationem! Eius, dolore. Quod dignissimos eligendi consectetur reiciendis rem, quis molestias adipisci tenetur numquam debitis aliquam, nesciunt sed assumenda nemo aliquid quibusdam eaque.
-        Dolores deserunt saepe veritatis, aperiam, repellendus voluptatem ducimus fuga dignissimos dolorum similique harum nesciunt laboriosam natus nisi assumenda corrupti consectetur in! Eos, deleniti hic. Quo fugiat possimus harum totam aliquid!
-        Placeat saepe eligendi, quod fugiat suscipit unde accusamus non cumque eveniet corrupti similique nam! Repellat possimus nam adipisci vitae dicta sint repellendus porro, ea, perspiciatis consequatur, impedit est similique quas!
-        Assumenda, veritatis iure architecto sapiente distinctio id nihil quibusdam vel numquam et repellat nam repudiandae a ipsam pariatur accusamus dolores ea cumque. Similique dolores pariatur voluptatum error maiores cum consequuntur.
-        Itaque consequatur minima, sequi ducimus expedita tempora non numquam cupiditate dignissimos cum! Quia inventore, voluptatum explicabo ipsum nihil autem beatae harum maxime quasi illo quis at nam voluptatem incidunt suscipit.
-        Ratione ipsum repudiandae dolor quo porro, veniam deserunt quas illo voluptas, consectetur sunt nesciunt voluptatum praesentium rerum? Et, eos placeat ea, debitis dolores at numquam culpa ex odio, accusantium facere!
-        Officiis blanditiis neque repellat quas quisquam, asperiores, nisi vitae architecto aut consequuntur labore explicabo illum odit repudiandae magni! Distinctio illum animi similique reprehenderit facilis voluptates sequi, voluptas suscipit iste optio!
+        <EntradasSection />
       </motion.section>
 
       <motion.section
