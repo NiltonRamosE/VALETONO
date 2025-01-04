@@ -32,8 +32,6 @@ export default function UbicacionSection() {
             <div>
               <h3 className="font-semibold text-white text-lg">Ubicación</h3>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Salón de Eventos Grand Aurora
-                <br />
                 Av. Miguel Grau Mz Ñ Lt. 10
               </p>
             </div>
