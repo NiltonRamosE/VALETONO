@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import EventSection from "@/sections/evento";
 import EntradasSection from "@/sections/entradas";
+import InvitadosSection from "@/sections/invitados";
 
 export default function IndexPage() {
 
@@ -31,16 +32,7 @@ export default function IndexPage() {
         transition={{ duration: 0.5 }}
         className=""
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatibus cupiditate quam voluptatum tempora expedita beatae, doloremque, voluptatem praesentium, assumenda distinctio nobis ipsum minus impedit? Cupiditate quas asperiores maxime odit?
-        Vero eaque repellat alias deleniti mollitia obcaecati vel! Dolorum repudiandae corporis dignissimos incidunt esse voluptatem nostrum porro. Repellat minima illum ut corrupti? Soluta nesciunt quis, sint voluptatibus ipsum autem nihil!
-        Eum quos, delectus animi minima similique dolorem inventore fugit incidunt aliquam soluta nesciunt expedita exercitationem repellendus accusamus repellat voluptates adipisci ducimus perferendis nam assumenda. Aut doloremque vero alias ut numquam!
-        Eos, explicabo voluptates possimus ea ipsa eveniet, expedita cupiditate libero cumque repellat voluptatem adipisci neque beatae quasi. Amet, excepturi consectetur maiores similique a soluta praesentium quibusdam ad, quod, velit reprehenderit?
-        Eligendi aspernatur voluptate animi soluta. Dolorem, sequi! Reprehenderit ducimus hic ea, praesentium numquam ex, est, ab dolorem aut facere accusantium beatae ut animi culpa inventore! Tenetur omnis officia beatae voluptatem.
-        Deleniti, nobis at possimus ad voluptatum in culpa, necessitatibus sunt dolorem, voluptatibus dignissimos. Fuga vel aperiam maxime debitis dolore eum aliquid animi dicta facilis placeat labore ad, sequi, excepturi quas?
-        Rem, quibusdam mollitia animi quam doloribus modi sit quaerat! Aliquid voluptas a rerum? Laborum rerum rem, nemo nulla expedita omnis laudantium. Placeat non quas adipisci sequi deleniti eius nihil rerum.
-        Reprehenderit dolores molestias ipsum necessitatibus iusto consectetur ut laudantium porro repellat! Excepturi quo nihil sapiente, nisi facilis saepe illo exercitationem sequi, fugit at iure architecto sit dicta rerum velit ratione.
-        Est debitis deserunt distinctio ducimus culpa porro, quae veritatis voluptatem. Esse adipisci doloribus consectetur culpa! Recusandae asperiores perferendis quasi ipsum ex esse omnis necessitatibus quaerat corporis, porro laudantium dicta doloribus.
-        Iste accusamus similique fugiat, earum, fugit ipsam sit labore asperiores voluptatibus deleniti qui dolor quasi illo porro quidem facilis dolorum voluptatum odit molestias laboriosam. Neque eaque dolore saepe. Consequuntur, modi?
+        <InvitadosSection />
       </motion.section>
       <motion.section
         id="ubicacion"
