@@ -46,7 +46,7 @@ export default function UbicacionSection() {
         <div className="w-full md:w-1/2 h-64 md:h-80 rounded-lg overflow-hidden shadow-md">
           <iframe
             title="Ubicación VALETONO"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509474!2d144.95373531531682!3d-37.81627974202166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577c28c75f4531b!2sSal%C3%B3n+de+Eventos+Grand+Aurora!5e0!3m2!1ses-419!2sus!4v1634598173940!5m2!1ses-419!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1969.8968176963801!2d-78.57348797239864!3d-9.082555626043305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ab81001c64451d%3A0x8da26ffd6776ef3f!2sCentro%20Pastoral%20Alexnet!5e0!3m2!1ses-419!2spe!4v1740233968381!5m2!1ses-419!2spe"
             width="100%"
             height="100%"
             style={{ border: 0 }}
