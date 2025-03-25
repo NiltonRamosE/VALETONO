@@ -41,7 +41,7 @@ export default function EventSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          <span className="font-bold">Este 25 de marzo</span> es mi tan esperado
+          <span className="font-bold">Hoy 25 de marzo</span> es mi tan esperado
           evento: <span className="font-bold text-nilton-neon">VALETONO</span>
         </motion.p>
 
@@ -55,7 +55,7 @@ export default function EventSection() {
             <FaCalendarAlt className="text-nilton-neon text-2xl" />
             <div>
               <h3 className="font-bold text-lg text-white">Fecha del Evento</h3>
-              <p className="text-gray-300">25 de marzo de 2025</p>
+              <p className="text-gray-300">25 de marzo de 2025 a las 7:00 pm</p>
             </div>
           </motion.div>
 

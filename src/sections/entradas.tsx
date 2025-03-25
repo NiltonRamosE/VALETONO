@@ -51,7 +51,15 @@ export default function EntradasSection() {
         este <span className="font-bold">25 de marzo</span>. ¡No te pierdas esta
         experiencia única!
       </motion.p>
-
+      <motion.p
+        className="text-gray-300 text-center md:text-lg lg:text-xl"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.8 }}
+      >
+        Puedes yapear al siguiente número para el regalo del cumpleañero: {" "}
+        <span className="font-bold">923224736</span>
+      </motion.p>
       <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-6 md:gap-12 mt-8">
         <motion.div
           className="flex flex-col items-center text-center bg-nilton-blue rounded-xl p-6 shadow-md shadow-nilton-dark w-full md:w-1/3"
