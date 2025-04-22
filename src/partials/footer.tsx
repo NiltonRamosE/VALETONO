@@ -19,7 +19,7 @@ export const Footer = () => {
         <Link
           isExternal
           className="text-current ml-1 text-nilton-green font-extrabold"
-          href="https://www.linkedin.com/in/nilton-ramos-encarnacion-0819b433b/"
+          href="https://www.linkedin.com/in/niltonramosencarnacion/"
           title="LinkedIn"
         >
           <span className="hidden sm:block">Nilton Ramos Encarnacion</span>
